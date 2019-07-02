@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import ResourceList from './ResourceList'
+import UserList from './UserList'
 const App =()=>{
 
     const [resource ,setResource]=useState('Posts')
@@ -15,7 +16,8 @@ const App =()=>{
 
 
     return(
-        <div className="ui container">                  
+        <div className="ui container">  
+            <UserList />                
             <div>
                 <button className="ui button" onClick={()=>setResource('Posts')}>
                     Posts                    
